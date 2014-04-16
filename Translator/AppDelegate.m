@@ -12,7 +12,23 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    // hide dock icon
+    // [NSApp setActivationPolicy: NSApplicationActivationPolicyAccessory];
+    
+    // access pasteboard
+    // NSPasteboard*  myPasteboard  = [NSPasteboard generalPasteboard];
+    // NSString* myString = [myPasteboard  stringForType:NSPasteboardTypeString];
+    
+    NSString *urlString = @"http://translate.google.com/#fr/en/";
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
+    [[[self webView] mainFrame] loadRequest:urlRequest];
+
+}
+
+// quit application on window close
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication {
+    return YES;
 }
 
 @end

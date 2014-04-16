@@ -18,6 +18,7 @@
 		DC1D332F184978CF000CFAFC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC1D330E184978CF000CFAFC /* Cocoa.framework */; };
 		DC1D3337184978CF000CFAFC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC1D3335184978CF000CFAFC /* InfoPlist.strings */; };
 		DC1D3339184978CF000CFAFC /* TranslatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1D3338184978CF000CFAFC /* TranslatorTests.m */; };
+		DC1D3343184979DA000CFAFC /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC1D3342184979DA000CFAFC /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		DC1D3334184978CF000CFAFC /* TranslatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TranslatorTests-Info.plist"; sourceTree = "<group>"; };
 		DC1D3336184978CF000CFAFC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DC1D3338184978CF000CFAFC /* TranslatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TranslatorTests.m; sourceTree = "<group>"; };
+		DC1D3342184979DA000CFAFC /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = ../../../../System/Library/Frameworks/WebKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC1D3343184979DA000CFAFC /* WebKit.framework in Frameworks */,
 				DC1D330F184978CF000CFAFC /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +98,7 @@
 		DC1D330D184978CF000CFAFC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC1D3342184979DA000CFAFC /* WebKit.framework */,
 				DC1D330E184978CF000CFAFC /* Cocoa.framework */,
 				DC1D332D184978CF000CFAFC /* XCTest.framework */,
 				DC1D3310184978CF000CFAFC /* Other Frameworks */,
@@ -387,6 +391,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Translator/Translator-Prefix.pch";
 				INFOPLIST_FILE = "Translator/Translator-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -400,6 +405,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Translator/Translator-Prefix.pch";
 				INFOPLIST_FILE = "Translator/Translator-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -464,6 +470,7 @@
 				DC1D333E184978CF000CFAFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC1D333F184978CF000CFAFC /* Build configuration list for PBXNativeTarget "TranslatorTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +479,7 @@
 				DC1D3341184978CF000CFAFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
